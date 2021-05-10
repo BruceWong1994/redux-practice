@@ -1,15 +1,22 @@
 const initialState = {
-    num: 0
+    num: 0,
+    checked: false,
 }
 
 function reducer(state = initialState, action) {
     switch (action.type) {
         case 'plus':
-            return { num: state.num + action.act }
+            return Object.assign({}, state, { num: state.num + action.act })
 
         case 'return':
-            return { num: 0 }
+            return Object.assign({}, state, { num: 0 })
 
+        case 'color':
+            return Object.assign({}, state, { checked: true })
+
+        case 'clearAll':
+            return initialState
+            
         default:
             return state;
     }

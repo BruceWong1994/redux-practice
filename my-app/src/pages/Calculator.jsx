@@ -15,7 +15,7 @@ class Calculator extends React.Component {
     }
 
     freshNumber = () => {
-        console.log(store.getState());
+        // console.log(store.getState());
         this.setState({
             num: store.getState().num
         })
@@ -27,8 +27,8 @@ class Calculator extends React.Component {
 
     render() {
         return (
-            <div style={{ marginLeft: 20 }}>
-                <p style={{ borderBottom: '1px solid black', width: 200 }}>Calculator 组件</p>
+            <div>
+                <p>Calculator 组件</p>
                 <p>{this.state.num}</p>
                 <div className='btn-block'>
                     <button className='normal' onClick={this.handleClick}>+2</button>

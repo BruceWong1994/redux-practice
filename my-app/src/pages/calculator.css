@@ -1,9 +1,9 @@
 .btn-block{
     height: 100px;
-    background: rebeccapurple;
+    /* background: rebeccapurple;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .normal{
     display: inline-block;
